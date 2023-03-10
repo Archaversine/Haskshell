@@ -16,6 +16,9 @@ import qualified Git
 pwd :: IO ()
 pwd = getCurrentDirectory >>= putStrLn
 
+pwdstr :: IO String
+pwdstr = getCurrentDirectory
+
 lsPredicate :: String -> Bool
 lsPredicate = (`notElem` [".", ".."])
 
