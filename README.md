@@ -1,3 +1,5 @@
+# Haskshell
+
 Haskshell is a new terminal shell powered by GHCi and Haskell. It was created to
 provide an interactive environment for Haskell programming that is both powerful
 and easy to use and has all the benefits of Haskell such as lazy evaluation,
