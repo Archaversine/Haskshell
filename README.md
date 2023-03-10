@@ -37,6 +37,14 @@ file, which is located in the project's root directory. The configuration file
 provides a way to customize the prompt, set up aliases for common commands, and
 define custom commands.
 
+## Documentation
+
+The Haskshell Git Wiki has information about all of the currently implemented
+functions in Haskshell from Fugue. Each page has information about what the
+command does, what it's syntax and type signature looks like, and even gives an
+example of how it can be used. The wiki is available
+[here](https://github.com/Archaversine/Haskshell/wiki/Haskshell).
+
 ## Community
 
 Haskshell is a relatively new project, but it is free and open-source. Users are
