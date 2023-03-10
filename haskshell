@@ -1,0 +1,10 @@
+#!/bin/bash
+
+hsdir="$(dirname $(realpath ${BASH_SOURCE}))"
+
+echo -e "\e[35mHaskshell\e[0m - A Lazily Evaluated Purely Functional Terminal\n"
+shuf -n 1 "${hsdir}/haskell-facts.txt" | fold -s
+# stack exec -- ghci -ghci-script="${hsdir}/run.ghci" -v0 "${hsdir}/Color.hs" "${hsdir}/Fugue.hs"
+
+cd "${hsdir}"
+stack exec -- ghci -ghci-script="run.ghci" -v0

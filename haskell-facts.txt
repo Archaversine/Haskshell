@@ -1,0 +1,89 @@
+Haskell is case-sensitive.
+Haskell uses whitespace to separate expressions, instead of semicolons.
+Haskell has no null values.
+Haskell uses a forward slash (/) for division, and backslash (\) for escaping.
+Haskell uses a double colon (::) to specify a type signature.
+Haskell uses the dollar symbol ($) for function application.
+Haskell has an operator precedence system that can be overridden using parentheses.
+Haskell supports pattern matching in function definitions.
+Haskell supports guard expressions in function definitions.
+Haskell supports anonymous functions, also known as lambda functions.
+Haskell supports partial application of functions.
+Haskell supports currying, which is the technique of transforming a function with multiple arguments into a chain of functions, each taking a single argument.
+Haskell supports function composition using the (.) operator.
+Haskell supports higher-order functions, which are functions that take other functions as arguments or return functions as results.
+Haskell supports type variables, which are variables that can represent any type.
+Haskell has a rich set of built-in data types, including integers, floating-point numbers, booleans, characters, and strings.
+Haskell has a type system that supports algebraic data types.
+Haskell supports tuples, which are ordered collections of values of different types.
+Haskell supports lists, which are ordered collections of values of the same type.
+Haskell supports arrays, which are mutable collections of values of the same type.
+Haskell supports records, which are collections of named fields.
+Haskell supports sum types, which are types that can represent one of several alternative values.
+Haskell supports product types, which are types that represent a combination of several values.
+Haskell supports type synonyms, which allow programmers to define alternative names for types.
+Haskell supports newtype declarations, which allow programmers to define new types that are equivalent to existing types, but with different names and restrictions.
+Haskell is a pure functional programming language, which means that functions have no side effects and always return the same result for the same inputs.
+Haskell supports referential transparency, which means that expressions can be replaced by their values without changing the behavior of the program.
+Haskell supports lazy evaluation, which means that expressions are only evaluated when their values are needed.
+Haskell supports higher-order functions, which are functions that take other functions as arguments or return functions as results.
+Haskell supports recursion, which is a technique of defining a function in terms of itself.
+Haskell supports tail recursion optimization, which is a technique that allows recursive functions to be optimized to avoid stack overflow errors.
+Haskell supports pattern matching, which is a technique of decomposing values into their constituent parts.
+Haskell supports list comprehensions, which are a concise way of creating lists using a combination of ranges, predicates, and functions.
+Haskell supports monads, which are a powerful abstraction for sequencing and combining computations.
+Haskell supports functors, which are a type class that represents a container that can be mapped over.
+Haskell supports applicative functors, which are a type class that represents a container that can be applied to a function.
+Haskell supports monoids, which are a type class that represents a container that can be combined using a binary operation.
+Haskell supports foldable types, which are types that can be folded down to a single value.
+Haskell supports traversable types, which are types that can be traversed in a specific order.
+Haskell has a powerful system of type classes, which are a way of defining a set of functions that can be applied to a specific set of types.
+Haskell has a built-in type class called Eq, which represents types that can be compared for equality.
+Haskell has a built-in type class called Ord, which represents types that can be compared and ordered.
+Haskell has a built-in type class called Num, which represents types that can be used in arithmetic expressions.
+Haskell has a built-in type class called Show, which represents types that can be converted to strings.
+Haskell has a built-in type class called Read, which represents types that can be read from strings.
+Haskell has a built-in type class called Enum, which represents types that can be enumerated.
+Haskell has a built-in type class called Bounded, which represents types that have a minimum and maximum value.
+Haskell has a built-in type class called Functor, which represents types that can be mapped over.
+Haskell has a built-in type class called Applicative, which represents types that can be applied to functions.
+Haskell has a built-in type class called Monad, which represents types that support sequencing and combining computations.
+Haskell supports type polymorphism, which means that functions can be defined to work with any type that satisfies a specific set of constraints.
+Haskell supports ad-hoc polymorphism, which means that functions can be defined to work with different types, as long as they satisfy a common set of constraints.
+Haskell supports parametric polymorphism, which means that functions can be defined to work with any type, without knowing anything about the type itself.
+Haskell supports type inference, which means that the compiler can automatically deduce the types of expressions and functions.
+Haskell has built-in support for concurrency, which means that programs can execute multiple tasks simultaneously.
+Haskell has a lightweight threads system, which allows multiple threads to be created and managed by the runtime system.
+Haskell supports software transactional memory (STM), which is a technique for synchronizing access to shared data.
+Haskell supports parallelism, which means that programs can be executed on multiple processors or cores.
+Haskell has a built-in library called Control.Parallel, which provides functions for parallel programming.
+Haskell has a built-in library called Control.Concurrent, which provides functions for concurrent programming.
+Haskell uses a monadic IO system, which means that input/output operations are performed using a sequence of monadic actions.
+Haskell supports lazy IO, which means that input/output operations can be performed on demand, instead of all at once.
+Haskell has a built-in library called System.IO, which provides functions for performing input/output operations.
+Haskell supports software transactional memory (STM), which is a technique for synchronizing access to shared data in a way that supports parallelism and concurrency.
+Haskell supports pure functions, which means that functions have no side effects and always return the same result for the same inputs.
+Haskell supports impure functions, which means that functions can have side effects and can return different results for the same inputs.
+Haskell provides a way to encapsulate impure functions using the IO monad, which allows them to be used in a pure functional programming environment.
+Haskell uses a system of monadic error handling, which means that errors are handled using a sequence of monadic actions.
+Haskell supports the Maybe type, which represents a value that may or may not exist.
+Haskell supports the Either type, which represents a value that can either be a success or a failure.
+Haskell supports pattern matching on types like Maybe, Either, and Try, making it easy to handle different cases.
+Haskell also supports the throw and catch functions, which allow for explicit exception handling.
+Haskell encourages programmers to write code that handles all possible errors, rather than relying on exceptions.
+Haskell's runtime system includes a garbage collector, which automatically manages memory allocation and deallocation.
+Haskell's garbage collector uses a technique called generational garbage collection, which is optimized for short-lived objects.
+Haskell's runtime system also includes a profiler, which can be used to analyze the performance of Haskell programs.
+Haskell's concurrency and parallelism features make it well-suited for writing high-performance and scalable software.
+Haskell's pure functional programming model also makes it easier to reason about the behavior and correctness of concurrent and parallel programs.
+Haskell has a vibrant and active open source community, with many libraries and frameworks available for a wide range of applications.
+Haskell has a strong tradition of academic research and development, with many influential papers and books written about the language.
+Haskell has a mascot called "Haskell the Elephant", which is a reference to the "elephant in the room" metaphor for issues that are often ignored.
+Haskell has a playful and punny culture, with many jokes and puns related to the language and its features.
+Haskell's name is derived from the mathematician Haskell Curry, who was a pioneer in the field of functional programming.
+Haskell was initially designed and implemented by a group of researchers at Yale University in the late 1980s and early 1990s.
+Haskell is now maintained by a community of developers and contributors from around the world.
+Haskell has been used in a wide range of applications, including financial modeling, scientific computing, web development, and video games.
+Haskell is known for its expressive and concise syntax, which can make code easier to read and write.
+Haskell is also known for its strong emphasis on type safety and correctness, which can help prevent bugs and errors.
+Haskell is not as widely used as some other programming languages, but it has a loyal and dedicated following of enthusiasts and practitioners.
