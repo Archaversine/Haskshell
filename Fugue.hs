@@ -107,10 +107,16 @@ grep phrase elems = do
   filtered <- filterM (return . isInfixOf phrase) elems
   mapM_ putStrLn filtered
 
+grepstr :: String -> [String] -> [String]
+grepstr phrase = filter (isInfixOf phrase)
+
 ngrep :: String -> [String] -> IO ()
 ngrep phrase elems = do
   filtered <- filterM (return . not . isInfixOf phrase) elems
   mapM_ putStrLn filtered
+
+ngrepstr :: String -> [String] -> [String]
+ngrepstr phrase = filter (not . isInfixOf phrase)
 
 touch :: FilePath -> IO ()
 touch filename = writeFile filename ""
