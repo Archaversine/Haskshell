@@ -26,12 +26,9 @@ home <- getEnv "HOME"
 -- Set CWD to $HOME
 cd home
 
-configDir = "/home/soundwave/.config/haskshell" :: FilePath
-
 -- Custom directory bookmarks
 up = ".." :: FilePath
 here = "." :: FilePath
-programming = "/home/soundwave/Programming" :: FilePath
 
 -- Custom boring commands
 htop = callCommand "htop"
