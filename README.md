@@ -39,9 +39,9 @@ to write complex commands more easily. Haskell offers a wide range of language
 features, including type safety, pattern matching, and higher-order functions,
 which can make it easier to work with complex data structures and algorithms.
 
-In bash, a for loop doesn't have the best syntax. For example here's how one
-would write a for loop to iterate through all files given by ls and print them
-one by one:
+Like many things in bash, a for loop doesn't have the best syntax. For example
+here's how one would write a for loop to iterate through all files given by ls
+and print them one by one:
 
 ``` bash
 for file in $(ls); do
