@@ -1,4 +1,3 @@
-
 import System.Process
 import System.FilePath
 import System.Directory
@@ -8,11 +7,12 @@ import System.Environment
 :set prompt-cont " | "
 :set editor vim
 
--- :set prompt-function \_ _ -> getCurrentDirectory >>= (\cwd -> return (" \ESC[35mλ \ESC[0m\ESC[1m" ++ takeFileName cwd ++ "\ESC[0m "))
--- :set prompt-function \_ _ -> System.Posix.User.getLoginName >>= (\name -> return (" \ESC[1m" ++ name ++ "\ESC[0m \ESC[35mλ\ESC[0m "))
+-- Generate Passacaglia module if it doesn't exist
+doesFileExist "Passacaglia.hs" >>= \x -> if not x then writeFile "Passacaglia.hs" "module Passacaglia where\n" else return ()
 
-:load Fugue.hs
+:load Passacaglia.hs Fugue.hs
 
+import Passacaglia
 import Fugue
 
 echo = putStrLn
@@ -31,22 +31,8 @@ up = ".." :: FilePath
 here = "." :: FilePath
 
 -- Custom boring commands
-htop = callCommand "htop"
 open x = callCommand $ "xdg-open \"" ++ x ++ "\""
 bash = callCommand "bash"
-pyshell = callCommand "python3"
-pyinstall package = callCommand $ "pip3 install " ++ package
-python path = callCommand $ "python3 \"" ++ path ++ "\""
-pacUpdate = callCommand "sudo pacman -Syyu"
-reboot = callCommand "reboot"
-sl = callCommand "sl"
 
 -- Custom awesome commands
-url link = callCommand $ "w3m " ++ link
-gimp fileName = callCommand $ "gimp " ++ "\"" ++ fileName ++ "\""
-nb = callCommand "stack exec jupyter-notebook"
 install package = callCommand $ "stack install " ++ package
-aport port = callCommand $ "aport " ++ port
-musescore = callCommand "npx dl-librescore@latest"
-
-gpt prompt = callCommand $ "chatgpt -p \"" ++ prompt ++ "\""
