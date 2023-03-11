@@ -32,6 +32,45 @@ Haskshell currently offers the following features:
 - Wiki pages: The Haskshell GitHub Wiki has a wiki page for every Haskshell
   command, with a definition, syntax, and example for each command.
 
+## Compared To Bash
+
+Haskell syntax is more expressive and powerful than Bash syntax, allowing users
+to write complex commands more easily. Haskell offers a wide range of language
+features, including type safety, pattern matching, and higher-order functions,
+which can make it easier to work with complex data structures and algorithms.
+
+In bash, a for loop doesn't have the best syntax. For example here's how one
+would write a for loop to iterate through all files given by ls and print them
+one by one:
+
+``` bash
+for file in $(ls); do
+    echo $file
+done
+```
+
+And here's how it would be done in Haskshell:
+
+``` haskell
+lsstr >>= mapM_ echo
+```
+
+But for a more literal translation, here's an unsimplifed version:
+
+``` haskell
+lsstr >>= \files -> mapM_ (\file -> echo file) files
+```
+
+And due to the nature of Haskell, it can even be split into different functions
+(Note that `echo` is an alias for `putStrLn`):
+
+``` haskell
+printFile f = echo f
+printFiles files = mapM_ printFile files
+
+lsstr >>= printFiles
+```
+
 ## Getting started
 
 To get started with Haskshell, users can download the latest version from the
