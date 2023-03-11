@@ -1,3 +1,5 @@
+{-# LANGUAGE FlexibleInstances #-}
+
 module Fugue where
 
 import Color
@@ -12,6 +14,15 @@ import System.Process
 import System.FilePath ( (</>) )
 
 import qualified Git
+
+class CommandArgument command where
+  toArgArray :: command -> [String]
+
+instance CommandArgument String where
+  toArgArray x = [x]
+
+instance CommandArgument [String] where
+  toArgArray = id
 
 pwd :: IO ()
 pwd = getCurrentDirectory >>= putStrLn
@@ -118,11 +129,8 @@ ngrep phrase elems = do
 ngrepstr :: String -> [String] -> [String]
 ngrepstr phrase = filter (not . isInfixOf phrase)
 
-touch :: FilePath -> IO ()
-touch filename = writeFile filename ""
-
-touchm :: [FilePath] -> IO ()
-touchm = mapM_ (`writeFile` "")
+touch :: CommandArgument command => command -> IO ()
+touch = mapM_ (`writeFile` "") . toArgArray
 
 cat :: FilePath -> IO ()
 cat filename = do
@@ -135,29 +143,17 @@ catstr = readFile
 less :: String -> IO ()
 less text = callCommand $ "less <<< \"" ++ text ++ "\""
 
-mkdir :: FilePath -> IO ()
-mkdir = createDirectory
+mkdir :: CommandArgument command => command -> IO ()
+mkdir pathArg = mapM_ createDirectory $ toArgArray pathArg
 
-mkmdir :: [FilePath] -> IO ()
-mkmdir = mapM_ createDirectory
+rm :: CommandArgument command => command -> IO ()
+rm = mapM_ removeFile . toArgArray
 
-rm :: FilePath -> IO ()
-rm = removeFile
+rmdir :: CommandArgument command => command -> IO ()
+rmdir = mapM_ removeDirectory . toArgArray
 
-rmm :: [FilePath] -> IO ()
-rmm = mapM_ removeFile
-
-rmdir :: FilePath -> IO ()
-rmdir = removeDirectory
-
-rrmdir :: FilePath -> IO ()
-rrmdir = removeDirectoryRecursive
-
-rmmdir :: [FilePath] -> IO ()
-rmmdir = mapM_ removeDirectory
-
-rrmmdir :: [FilePath] -> IO ()
-rrmmdir = mapM_ removeDirectoryRecursive
+rrmdir :: CommandArgument command => command -> IO ()
+rrmdir = mapM_ removeDirectoryRecursive . toArgArray
 
 cp :: FilePath -> FilePath -> IO ()
 cp source dest = readFile source >>= writeFile dest
