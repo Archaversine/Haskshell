@@ -30,9 +30,9 @@ cd home
 up = ".." :: FilePath
 here = "." :: FilePath
 
--- Custom boring commands
+-- Temporary Binds (Will eventually be removed)
 open x = callCommand $ "xdg-open \"" ++ x ++ "\""
 bash = callCommand "bash"
 
--- Custom awesome commands
+-- Stack Binds
 install package = callCommand $ "stack install " ++ package
