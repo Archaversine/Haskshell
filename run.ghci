@@ -23,8 +23,9 @@ putStrLn "\x1b]0;Haskshell\a"
 -- Environment Variables
 home <- getEnv "HOME"
 
--- Set CWD to $HOME
-cd home
+-- Set CWD to correct working directory
+-- Stored in .dir via haskshell script
+readFile ".dir" >>= cd
 
 -- Custom directory bookmarks
 up = ".." :: FilePath
