@@ -14,6 +14,7 @@ doesFileExist "Passacaglia.hs" >>= \x -> if not x then writeFile "Passacaglia.hs
 
 import Passacaglia
 import Fugue
+import Color
 
 echo = putStrLn
 
