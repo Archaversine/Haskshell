@@ -87,3 +87,119 @@ Haskell has been used in a wide range of applications, including financial model
 Haskell is known for its expressive and concise syntax, which can make code easier to read and write.
 Haskell is also known for its strong emphasis on type safety and correctness, which can help prevent bugs and errors.
 Haskell is not as widely used as some other programming languages, but it has a loyal and dedicated following of enthusiasts and practitioners.
+Pragmas can be used to control optimizations, enable or disable language extensions, and more.
+The {-# LANGUAGE #-} pragma is used to enable language extensions.
+The {-# OPTIONS #-} pragma is used to set compiler options.
+The {-# INLINE #-} pragma is used to mark a function as inlineable.
+The {-# NOINLINE #-} pragma is used to prevent a function from being inlined.
+The {-# SPECIALIZE #-} pragma is used to generate specialized versions of a polymorphic function.
+The {-# ANN #-} pragma is used to attach annotations to a function or data type.
+The {-# RULES #-} pragma is used to specify transformation rules for the compiler.
+The {-# UNPACK #-} pragma is used to unpack a data type.
+The {-# SOURCE #-} pragma is used to specify the source file for a module.
+The {-# DEPRECATED #-} pragma is used to mark a function or data type as deprecated.
+The {-# WARNING #-} pragma is used to emit a warning message during compilation.
+The {-# GENERATED #-} pragma is used to mark a module as generated code.
+The {-# LANGUAGE_FOO #-} pragma is used to enable the FOO language extension.
+The {-# OPTIONS_FOO #-} pragma is used to set the FOO compiler option.
+The {-# SCC #-} pragma is used to annotate code for profiling.
+The {-# CORE #-} pragma is used to output the core representation of a function or expression.
+The {-# NOUNPACK #-} pragma is used to prevent a data type from being unpacked.
+The {-# INLINEABLE #-} pragma is used to mark a function as potentially inlineable.
+The {-# CONLIKE #-} pragma is used to mark a function as constructor-like.
+The {-# SOURCE #-} pragma is used to specify the source file for a module.
+The {-# ANN_FOO #-} pragma is used to attach the FOO annotation to a function or data type.
+The {-# RULES_FOO #-} pragma is used to specify transformation rules for the FOO compiler option.
+The {-# SPECIALIZE_FOO #-} pragma is used to generate specialized versions of a polymorphic function for the FOO type.
+The {-# INLINE_FOO #-} pragma is used to mark a function as inlineable for the FOO module.
+The {-# NOINLINE_FOO #-} pragma is used to prevent a function from being inlined for the FOO module.
+The {-# DEPRECATED_FOO #-} pragma is used to mark a function or data type as deprecated for the FOO module.
+The {-# WARNING_FOO #-} pragma is used to emit a warning message during compilation for the FOO module.
+The {-# GENERATED_FOO #-} pragma is used to mark a module as generated code for the FOO module.
+The {-# SCC_FOO #-} pragma is used to annotate code for profiling for the FOO module.
+The {-# CORE_FOO #-} pragma is used to output the core representation of a function or expression for the FOO module.
+The {-# NOUNPACK_FOO #-} pragma is used to prevent a data type from being unpacked for the `
+When profiling Haskell code, make sure to enable profiling flags when compiling your code.
+When profiling Haskell code, use a representative workload to get meaningful results.
+When profiling Haskell code, focus on the parts of the code that consume the most resources.
+When profiling Haskell code, use tools like GHC's built-in profiler or external tools like hp2ps or ghc-prof-flamegraph.
+When profiling Haskell code, pay attention to both time and space usage.
+When profiling Haskell code, use benchmarks to compare different implementations or optimizations.
+When profiling Haskell code, be aware that lazy evaluation can make it difficult to determine where time and space is being used.
+When profiling Haskell code, use strictness annotations or strict data types to force evaluation where it's needed.
+When profiling Haskell code, use specialized data types or functions to reduce overhead.
+When profiling Haskell code, use data structures that are appropriate for the problem at hand.
+When profiling Haskell code, use the most efficient algorithms and data structures available.
+When profiling Haskell code, avoid unnecessary allocations and use memory pools or caches when appropriate.
+When profiling Haskell code, use parallelism or concurrency to distribute work across multiple cores.
+When profiling Haskell code, consider using streaming libraries like Conduit or Pipes to avoid unnecessary memory usage.
+When profiling Haskell code, use strictness analysis tools like hlint or ghc-mod to identify opportunities for optimization.
+When profiling Haskell code, use profiling tools like threadscope or eventlog to identify bottlenecks in multi-threaded or distributed code.
+When profiling Haskell code, use the -O2 flag to enable optimization in GHC.
+When profiling Haskell code, use profiling tools like ghc-prof or ghc-events-analyze to identify opportunities for optimization.
+When profiling Haskell code, consider using LLVM as a backend for GHC to improve performance.
+When profiling Haskell code, use benchmarking tools like criterion to accurately measure performance differences between implementations.
+When profiling Haskell code, use libraries like vector or text for efficient handling of large amounts of data.
+When profiling Haskell code, use the most appropriate data structures and algorithms for your problem, even if they are not part of the standard library.
+When profiling Haskell code, be aware of lazy I/O and use strict I/O where appropriate.
+When profiling Haskell code, use fusion to optimize data processing pipelines.
+When profiling Haskell code, avoid unnecessary computations by memoizing or caching results.
+When profiling Haskell code, use the most efficient serialization and deserialization libraries available.
+When profiling Haskell code, use code generation tools like Template Haskell to reduce overhead in runtime code.
+When profiling Haskell code, use code generation tools like ghc-exactprint to automate the application of optimizations.
+When profiling Haskell code, use profiling tools like ghc-vis or ghc-debug to visualize the runtime behavior of your code.
+When profiling Haskell code, use profiling tools like ghc-prof-summary to get a quick overview of where time is being spent.
+When profiling Haskell code, use profiling tools like ghc-heap-view to see how memory is being used.
+When profiling Haskell code, use profiling tools like ghc-events-analyze to see how events are being handled.
+When profiling Haskell code, use profiling tools like ghc-prof-flamegraph to generate flamegraphs of your code's runtime behavior.
+When profiling Haskell code, use profiling tools like hie-bios to easily set up a profiling environment for your code.
+Lazy evaluation can be tricky, but be careful not to evaluate expressions unnecessarily!
+Head and tail can be tempting, but be cautious of their partiality and try to use safer alternatives.
+Take advantage of Haskell's type safety to catch errors before they become a problem!
+Proper error and exception handling is key to creating reliable Haskell code.
+Don't overlook the importance of profiling and optimization to ensure your Haskell code is efficient!
+Overusing String types can lead to performance issues and make code harder to reason about.
+Avoid using mutable state in Haskell whenever possible, instead favoring pure functions and immutable data structures.
+Be mindful of how functions are composed in your code to prevent excessive memory usage or other performance issues.
+Using unnecessary or overly complex abstractions can make code difficult to read and maintain.
+Avoid relying too heavily on code generation tools or macros, as they can make it difficult to understand what the code is doing.
+Make sure to thoroughly test your Haskell code to ensure it works as expected.
+Use algebraic data types and pattern matching to create robust and extensible data structures in Haskell.
+Avoid using functions that are overly specific to a particular use case, as this can make code harder to reuse.
+Properly handling concurrency in Haskell requires careful consideration of how resources are shared and accessed.
+Don't forget to consider the cost of laziness when writing Haskell code, as it can impact performance significantly.
+Avoid using overly complex type signatures that can make code harder to read and understand.
+Be careful not to overuse type classes in Haskell, as they can create unnecessary complexity.
+Avoid using nested case expressions or if statements, as this can lead to less readable code.
+Carefully manage imports in your Haskell code to prevent namespace clashes and other issues.
+Make sure to handle possible failure cases when working with external resources like databases or web services.
+Consider using the except monad to simplify error handling and exception handling in Haskell.
+Avoid relying on IO for everything in your Haskell code, as it can make it difficult to reason about and test.
+Make sure to properly handle resource cleanup when working with files, sockets, or other external resources in Haskell.
+Use higher-order functions and function composition to make code more modular and reusable.
+Don't overlook the importance of documentation in making your Haskell code more accessible to others.
+Avoid relying on unsafePerformIO or other unsafe functions in Haskell, as they can create difficult-to-debug issues.
+Make sure to properly handle null or empty cases when working with collections in Haskell.
+Consider using libraries like Lens or Prism to simplify complex data access patterns in Haskell.
+Avoid using recursion when other approaches like folding or mapping would be more efficient or readable.
+Make use of profiling tools like ghc-prof or hp2ps to identify performance bottlenecks in your Haskell code.
+Avoid using non-strict data structures or functions where possible, as this can create issues with memory usage and performance.
+Be mindful of how type inference works in Haskell, as this can sometimes lead to unexpected or hard-to-understand behavior.
+Consider using ReaderT or other monad transformers to simplify code that needs to share common resources.
+Don't forget to properly handle and clean up after exceptions when working with threads in Haskell.
+Consider using async or other libraries to simplify concurrent programming in Haskell.
+Be careful not to overuse type families or GADTs, as they can make code harder to read and understand.
+Make sure to properly handle lazy I/O when working with streams or other large data sets in Haskell.
+Consider using ST or other monads for managing state in Haskell, instead of relying on mutable references.
+Avoid using unsafeCoerce or other unsafe functions in Haskell, as they can lead to undefined behavior.
+Use seq or deepseq to ensure that expressions are evaluated strictly when needed.
+Make sure to avoid using String concatenation or appending in performance-critical code, as it can create unnecessary memory overhead.
+Avoid using partial functions like !! or error, as they can create difficult-to-debug issues.
+Be careful not to overuse type families or GADTs, as they can make code harder to read and understand.
+Use appropriate data structures like Map or Set when working with collections of data in Haskell, instead of using lists.
+Avoid using if-then-else statements when pattern matching would be more efficient or readable.
+Make sure to properly handle and clean up after exceptions when working with threads in Haskell.
+Use unsafePerformIO only as a last resort and with extreme caution, as it can create difficult-to-debug issues.
+Make use of libraries like containers or vector to simplify common data manipulation tasks in Haskell.
+Avoid using Floating types for performance-critical code, as they can be slower and less accurate than Double or Int.
+Be careful not to overuse do notation in Haskell, as it can lead to less readable or less efficient code.
