@@ -4,7 +4,7 @@ import System.Directory
 import System.Environment
 
 :set prompt " \ESC[35mλ\ESC[0m "
-:set prompt-cont " | "
+:set prompt-cont " > "
 :set editor vim
 
 -- Generate Passacaglia module if it doesn't exist

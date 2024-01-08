@@ -8,4 +8,4 @@ shuf -n 1 "${hsdir}/haskell-facts.txt" | fold -s
 echo -n "$PWD" > "${hsdir}/.dir"
 
 cd "${hsdir}"
-stack exec -- ghci -ghci-script="run.ghci" -v0
+ghci -ghci-script="run.ghci" -v0
