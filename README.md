@@ -5,6 +5,8 @@ provide an interactive environment for Haskell programming that is both powerful
 and easy to use and has all the benefits of Haskell such as lazy evaluation,
 partial function application, and much more. Haskshell is free and open-source.
 
+![Haskshell Preview](https://raw.githubusercontent.com/Archaversine/Haskshell/main/imgs/preview.png)
+
 ## Features
 
 Haskshell currently offers the following features:
